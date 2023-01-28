@@ -18,8 +18,10 @@ jobs:
     # The type of runner that the job will run on
     runs-on: self-hosted
 
+
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+    - uses: actions/checkout@v1 
     # Runs a single command using the runners shell
-    - name: Send greeting
-      run: echo "Hello World"
+    - run: |
+        cp index.html /Users/maulana/Data/Playground/demo-lukan
